@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/inquiry.css">
+</head>
+<body>
+  <!-- Existing Navbar -->
+  <div id="navbar">
+    <img src="images/logo.png" class="logo">
+    <nav>
+      <a href="index.html"> HOME </a>
+      <a href="about.html"> ABOUT US </a>
+      <a href="products.html"> PRODUCTS </a>
+      <a href="inquiry.html"> INQUIRY </a>
+    </nav>
+  </div>
+
+  <div id="navbar-mobile">
+    <div class="mobile-container">
+      <img src="images/logo.png" class="logo">
+      <div class="hamburger-menu" onclick="toggleMobileMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html"> HOME </a>
+      <a href="about.html"> ABOUT US </a>
+      <a href="products.html"> PRODUCTS </a>
+      <a href="inquiry.html"> INQUIRY </a>
+    </nav>
+  </div>
+
+  <!--Header Image-->
+  <header>
+    <div class="center-container">
+      <h1 class="header-text header-solo">INQUIRY</h1>
+    </div>
+    <img src="images/header.png" id="header-img" alt="Header Image">
+  </header>
+
+  <div class="form-container">
+    <h2>FOR QUESTIONS ABOUT OUR PRODUCTS,<br>KINDLY FILL UP THE FORM.</h2>
+    <form action="#" method="post">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="product">Product:</label>
+      <input type="text" id="product" name="product" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="question">Question:</label>
+      <textarea id="question" name="question" rows="5" required></textarea>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+  
+  <section id="notable-customers-section">
+    <p>This service is recommended by the companies below.</p>
+    <div class="table-container">
+      <h3>NOTABLE CUSTOMERS</h3>
+      <table class="table">
+        <tr class="row-1">
+          <th style="background-color: var(--darkyellow);">COMPANY NAME</th>
+          <th style="background-color: var(--darkyellow);">PRODUCT/S <br>ORDERED</th>
+          <th class="extra-padding" style="background-color: var(--darkyellow);">TIME PERIOD</th>
+        </tr>
+
+        <tr class="row-2">
+          <td class="company-name">Philippine Medical <br>Association (PMA)</td>
+          <td>Souvenir Program, <br>Certificate Holder</td>
+          <td class="extra-padding">EVERY 3 MONTHS</td>
+        </tr>
+
+        <tr class="row-3">
+          <td class="company-name">Quezon City <br>Medical Society</td>
+          <td>Souvenir Program, Trophy, <br>Certificate Holder</td>
+          <td class="extra-padding">EVERY 2 MONTHS</td>
+        </tr>
+
+        <tr class="row-4">
+          <td class="company-name" style="background-color: var(--darkyellow);">Philippine Society of <br>Anesthesiologist, Inc.</td>
+          <td style="background-color: var(--darkyellow)">Souvenir Program, <br>Trophy</td>
+          <td class="extra-padding" style="background-color: var(--darkyellow)">QUARTERLY</td>
+        </tr>
+        
+        <tr class="row-5">
+          <td class="company-name">Go8 Cargo <br>Mover’s, Inc.</td>
+          <td>Gift Wrapper, <br>Calendar</td>
+          <td class="extra-padding">YEARLY</td>
+        </tr>
+
+        <tr class="row-6">
+          <td class="company-name">FVA Insurance <br>Corporation</td>
+          <td>Calendar</td>
+          <td class="extra-padding">YEARLY</td>
+        </tr>
+
+        <tr class="row-7">
+          <td class="company-name" style="background-color: var(--darkyellow)">Ian-Yan Poultry <br>Supply and <br>Gen. Merchandize.</td>
+          <td style="background-color: var(--darkyellow);">Calendar</td>
+          <td class="extra-padding" style="background-color: var(--darkyellow);">YEARLY</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+    
+  <footer>
+    <div class="column-one">
+      <img src="images/logo.png" alt="Roshashana Printing Services Logo">
+      <p>
+        Roshashana printing services is a family running business that has been 
+        serving and providing printing needs for over two decades now and we are 
+        staffed with professionals who have years of experience.
+      </p>
+    </div>
+    <div class="column-two">
+      <h3>MENU</h3>
+      <div class="footer-nav">
+        <a href="index.html"> HOME </a>
+        <a href="about.html"> ABOUT US </a>
+        <a href="products.html"> PRODUCTS </a>
+        <a href="inquiry.html"> INQUIRY </a>
+      </div>
+    </div>
+    <div class="column-three">
+      <h3>CONTACTS</h3>
+      <div class="contacts-container">
+        <p><span>Working Hours :</span> 8:00 am - 5:00pm</p>
+        <p><span>Contact No :</span> <a href="tel:09165401749" target="_blank">0916-540-1749</a></p>
+        <p><span>Email :</span> <a href="mailto:chanarthur@yahoo.com" target="_blank">chanarthur@yahoo.com</a></p>
+        <p><span>Facebook:</span> <a href="https://www.facebook.com/profile.php?id=100064178760776" target="_blank">Roshashana Printing Services</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main-index.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+
+    <!-- Existing Navbar -->
+  <div id="navbar">
+    <img src="images/logo.png" class="logo">
+    <nav>
+      <a href="index.html"> HOME </a>
+      <a href="about.html"> ABOUT US </a>
+      <a href="products.html"> PRODUCTS </a>
+      <a href="inquiry.html"> INQUIRY </a>
+    </nav>
+  </div>
+
+  <div id="navbar-mobile">
+    <div class="mobile-container">
+      <img src="images/logo.png" class="logo">
+      <div class="hamburger-menu" onclick="toggleMobileMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="index.html"> HOME </a>
+      <a href="about.html"> ABOUT US </a>
+      <a href="products.html"> PRODUCTS </a>
+      <a href="inquiry.html"> INQUIRY </a>
+    </nav>
+  </div>
+  
+  
+  <header id="index-header" class="index-header"> <!-- Added unique ID -->
+    <div class="center-container">
+      <h1 class="header-text">LOOKING FOR QUALITY <br><span class="tab-space">PRINTING SERVICES?</span></h1>
+      <h2 class="sub-header-text">WE PRINT YOUR IDEAS!</h2>
+    </div>
+    <img src="images/header.png" id="header-img" alt="Header Image">
+  </header>
+  
+
+    <!--Main-->
+    <section id="main-section">
+      <!--Business description-->
+      <section id="short-business-description-section">
+        <div class="center-container"> 
+          <p>
+            Roshashana Printing Services is started by one person
+            working and figured out to start his own business . 
+          </p>
+
+          <p>
+            With two <span class="italic-bold-text">decades of experience</span>, this business will surely have a decent products. 
+            Wanna know more from us, check <a href="about.html"> About us</a> page.
+          </p>
+
+        </div>
+      </section>
+
+      <!--Services-->
+      <section iservices-sectiond="">
+        <h2> Our Services </h2>
+        <div class="types-of-printing-container"> 
+          <div class="digital-printing">
+            <h3> Digital Printing </h3>
+            <p>
+              This method uses digital files to 
+              print directly onto various materials. 
+              It's ideal for short runs and quick turnarounds, with the ability 
+              to produce high-quality prints in vibrant colors. 
+            </p>
+          </div>
+          
+          <div class="calendar-printing">
+            <h3> Calendar Printing </h3>
+            <p>
+              We offers different kind of calendars that uses Standard glossy paper stock and other options. 
+              Printing calendars is a fantastic method to promote your business's image 
+              and encourage direct communication with your target market.
+            </p>
+          </div>
+
+          <div class="screen-printing">
+            <h3> Screen Printing </h3>
+            <p>
+              This traditional printing technique involves creating a stencil (screen) and using it to apply layers of ink onto the printing surface. We often 
+              use this at calendar catalog.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="offers-section">
+        <img src="images/ink.png">
+        <div class="text-container">
+          <p>
+            As shown in the figure below about showing our customers, including the Local Government Unit (LGU),
+            that trusted our service.
+          </p>
+          <p>
+            Also, we offer more besides printing: medals, trophies, and many more! See below for a list of products.
+            For checking pictures of individual products, please go to the <a href="products.html">Products</a> page and sign up
+            for the form for product questions.
+          </p>
+        </div>
+      </section>
+
+      <section id="our-products-section">
+        <div class="our-products-container">
+          <h2>Our Products</h2>
+          <div class="print-products">
+            <img src="images/print.png">
+            <ul>
+              <h3>WE PRINT:</h3>
+              <li>Brochure</li>
+              <li>Newsletter</li>
+              <li>Souvenir Program</li>
+              <li>School Yearbook</li>
+              <li>Stickers</li>
+              <li>Gift Wrapper</li>
+              <li>Calendar Print</li>
+            </ul>
+          </div>  
+
+          <div class="other-products">
+            <ul>
+              <h3>WE ALSO MAKE:</h3>
+              <li>Medal</li>
+              <li>Trophy</li>
+              <li>Certificate Holder</li>
+              <li>Mugs</li>
+              <li>Gold Stamping</li>  
+            </ul>
+            <img src="images/school-yearbook.png">
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <footer>
+      <div class="column-one">
+        <img src="images/logo.png" alt="Roshashana Printing Services Logo">
+        <p>
+          Roshashana printing services is a family running business that has been 
+          serving and providing printing needs for over two decades now and we are 
+          staffed with professionals who have years of experience.
+        </p>
+      </div>
+      <div class="column-two">
+        <h3>MENU</h3>
+        <div class="footer-nav">
+          <a href="index.html"> HOME </a>
+          <a href="about.html"> ABOUT US </a>
+          <a href="products.html"> PRODUCTS </a>
+          <a href="inquiry.html"> INQUIRY </a>
+        </div>
+      </div>
+      <div class="column-three">
+        <h3>CONTACTS</h3>
+        <div class="contacts-container">
+          <p><span>Working Hours :</span> 8:00 am - 5:00pm</p>
+          <p><span>Contact No :</span> <a href="tel:09165401749" target="_blank">0916-540-1749</a></p>
+          <p><span>Email :</span> <a href="mailto:chanarthur@yahoo.com" target="_blank">chanarthur@yahoo.com</a></p>
+          <p><span>Facebook:</span> <a href="https://www.facebook.com/profile.php?id=100064178760776" target="_blank">Roshashana Printing Services</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html

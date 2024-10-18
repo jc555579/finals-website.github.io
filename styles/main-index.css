@@ -1,0 +1,359 @@
+.mobile {
+  display: none;
+}
+/*Main section*/
+/* Short description of business */
+#short-business-description-section {
+  width: 100%;
+  height: 600px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#short-business-description-section p {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#short-business-description-section p:nth-of-type(1) {
+  width: 1300px;
+} 
+
+#short-business-description-section p:nth-of-type(2) {
+  width: 800px;
+}
+.italic-bold-text {
+  font-weight: 700;
+}
+
+/* Services */
+#services-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10em;
+}
+
+#services-section p {
+  font-size: 1.3em;
+}
+
+.digital-printing, .calendar-printing, 
+.screen-printing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+  padding: 1.2em;
+  width: 420px;
+  height: 436px;
+}
+
+.digital-printing, .calendar-printing, 
+.screen-printing {
+  width: 404px;
+  height: 436px;
+  margin-top: 4em;
+}
+
+.types-of-printing-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.digital-printing {
+  background-color: var(--darkyellow);
+}
+
+.calendar-printing {
+ background-color: var(--pink); 
+}
+
+.screen-printing {
+  background-color: var(--lightblue);
+}
+
+/* Offers */
+#offers-section {
+  margin-top: 10em;
+  position: relative;
+}
+
+/* For black background rectangle */
+#offers-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: var(--semi-transparent-black); /* Semi-transparent black */
+  z-index: 1; /* Behind the text and image */
+}
+
+#offers-section img {
+  width: 100%;
+}
+
+.text-container {
+  width: 100%; /* Make the text container 100% of the parent */
+  max-width: 1400px; /* Set a max-width to prevent over-stretching */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* Center the container horizontally */
+  padding: 0 3em; /* Add padding for spacing */
+  z-index: 2; /* On top of the background */
+}
+
+.text-container p {
+  color: white;
+  font-size: 2em; /* Adjust font size */
+  font-weight: bold;
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.text-container p:nth-of-type(1) {
+  margin: 0.2em 0 1em 0;
+}
+
+/* Our Products */
+#our-products-section {
+  margin-top: 15em;
+  background-color: var(--gray);
+  padding: 4em;
+}
+
+.our-products-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4em;
+  align-items: center;
+}
+
+#our-products-section ul {
+  background-color: var(--white);
+  padding: 1em 10em 1em 4em;
+}
+
+.print-products, .other-products {
+  display: flex;
+  column-gap: 4em;
+}
+
+.our-products-container li {
+  font-size: 2.2em;
+}
+
+
+@media screen and /*(min-width: 1028px)*/ (max-width: 1380px) {
+  #short-business-description-section p:nth-of-type(1) {
+    width: 800px;
+  } 
+
+  /* Offers */
+  .text-container {
+    padding: 0 2em;
+    
+  }
+
+  .text-container p {
+    font-size: 1.9em;
+    line-height: 1.5;
+  }
+
+  /* Products */
+  #our-products-section img {
+    width: 550px;
+  }
+
+  .our-products-container li {
+    font-size: 1.7em;
+  }
+
+  #our-products-section ul {
+    /* padding: 1em 10em 1em 4em; */
+    padding: 1em 5em 1em 3em;
+  }
+
+  #our-products-section ul h3 {
+    font-size: 1.9em;
+  }
+
+}
+
+@media screen and (max-width: 1027px) {
+  #short-business-description-section {
+    height: 500px;
+  }
+  #short-business-description-section p {
+    font-size: 2em;
+  }
+  
+  /* .center-container {
+    margin-top: 1em;
+    padding-bottom: 1em;
+  } */
+
+  .text-container p {
+    font-size: 1.5em;
+  }
+
+  #offers-section::before {
+    height: 98%;
+  }
+  #our-products-section img {
+    height: 400px;
+    width: 400px;
+    vertical-align: middle;
+  }
+
+  .print-products, .other-products {
+    column-gap: 2em;
+  }
+
+  #our-products-section ul {
+    /* padding: 1em 10em 1em 4em; */
+    padding: 1em 3.5em 1em 3em;
+  }
+
+  .our-products-container li {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  #short-business-description-section {
+    height: 470px;
+  }
+  #short-business-description-section p {
+    font-size: 2em;
+  }
+
+  #short-business-description-section p:nth-of-type(1), #short-business-description-section p:nth-of-type(2) {
+    width: 620px;
+  } 
+  /* Offers */
+  .text-container {
+    top: 4%;
+    left: 48%;
+  }
+
+  .text-container p {
+    font-size: 1.4em;
+    padding: 0 1em;
+  }
+
+  /* Products */
+  #our-products-section {
+    padding: 3em 0;
+  }
+  .our-products-container {
+    row-gap: 1em;
+  }
+
+  .print-products {
+    flex-direction: column;
+  }
+
+  .print-products::after {
+    border-bottom: 2px solid var(--black);
+  }
+  .print-products {
+    flex-direction: column;
+  }
+  .other-products {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text-container {
+    top: 0%;
+    left: 48%;
+  }
+
+  .text-container p {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  #short-business-description-section p {
+    font-size: 1.7em;
+  }
+
+  #short-business-description-section p:nth-of-type(1), 
+  #short-business-description-section p:nth-of-type(2) {
+    width: 580px;
+  }
+
+  #offers-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #short-business-description-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 442px){
+  #services-section h2 {
+    font-size: 2.7em;
+  }
+
+  #services-section h3 {
+    font-size: 2em;
+  }
+
+  .digital-printing, .calendar-printing, .screen-printing {
+    width: auto;
+    height: auto;
+    margin: 1em 1em;
+  }
+
+  #services-section p {
+    font-size: 1.2em;
+  }
+ 
+}
+/* 
+#services-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10em;
+}
+
+#services-section p {
+  font-size: 1.3em;
+}
+
+.digital-printing, .calendar-printing, 
+.screen-printing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+  padding: 1.2em;
+  width: 420px;
+  height: 436px;
+}
+
+.digital-printing, .calendar-printing, 
+.screen-printing {
+  width: 404px;
+  height: 436px;
+  margin-top: 4em;
+}
+
+.types-of-printing-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */

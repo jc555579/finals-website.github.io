@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box;
+}
+
+#main-section {
+  margin-top: 5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+#description-section {
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4em;
+  padding: 5em;
+  width: 85%;
+  box-shadow: 0px 4px 4px 0px var(--shadow-color);
+}
+
+#description-section p, #description-section h3 {
+  text-align: center;
+}
+
+#description-section p {
+  font-size: 2em;
+  font-weight: 500;
+  width: 85%;
+}
+
+#description-section h3 {
+  font-size: 2em;
+}
+
+/* Media Section */
+.media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.media video {
+  margin-top: 3em;
+  width: 75%; /* Set video width to 80% */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+  height: auto;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #main-section {
+    margin-top: 3em;
+  }
+
+  #description-section {
+    padding: 2em;
+  }
+
+  #description-section p {
+    font-size: 1.5em;
+  }
+
+  #description-section h3 {
+    font-size: 1.5em;
+  }
+
+  .media {
+    padding: 10px 0;
+  }
+
+  #logo-section img {
+    width: 70%; /* Make logo smaller */
+    max-width: 300px; /* Set a max width if needed */
+  }
+}
